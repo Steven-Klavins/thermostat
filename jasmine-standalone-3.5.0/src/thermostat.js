@@ -35,3 +35,14 @@ Thermostat.prototype.powerSavingOff = function() {
 Thermostat.prototype.reset = function() {
   this.temp = this.DEFAULT_TEMP
 }
+
+Thermostat.prototype.usage = function () {
+  if (this.temp >= 25) {
+    return "high-usage"
+  }
+  if (this.temp < 25 && this.temp>= 18){ 
+    return "medium-usage"
+  } 
+  return "low-usage"
+}
+

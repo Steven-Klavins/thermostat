@@ -50,5 +50,24 @@ describe('Thermostat', function() {
       expect(thermostat.temp).toEqual(20)
     })
 
+    it('allows the user to see how high or low their energy usage is, test for high', function() {
+      thermostat.increase(10)
+      expect(thermostat.usage()).toEqual("high-usage")
+    })
+
+
+    it('allows the user to see how high or low their energy usage is, test for medium', function() {
+      thermostat.increase(4)
+      expect(thermostat.usage()).toEqual("medium-usage")
+    })
+
+    it('allows the user to see how high or low their energy usage is, test for low', function() {
+      thermostat.decrease(9)
+      expect(thermostat.usage()).toEqual("low-usage")
+    })
+
+
+
+
 }); 
 
