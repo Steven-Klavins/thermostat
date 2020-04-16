@@ -44,5 +44,11 @@ describe('Thermostat', function() {
       expect(thermostat.temp).toEqual(32)
     })
 
+    it('has a reset funtion to set temp to default', function() {
+      thermostat.increase(12)
+      thermostat.reset() 
+      expect(thermostat.temp).toEqual(20)
+    })
+
 }); 
 

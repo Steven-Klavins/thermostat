@@ -28,6 +28,10 @@ Thermostat.prototype.powerSavingOn = function() {
   this.savingOn = true;
 }
 
-Thermostat.prototype.powerSavingOff = function(){
+Thermostat.prototype.powerSavingOff = function() {
   this.savingOn = false
+}
+
+Thermostat.prototype.reset = function() {
+  this.temp = this.DEFAULT_TEMP
 }
