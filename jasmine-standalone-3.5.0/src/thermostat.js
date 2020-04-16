@@ -1,6 +1,6 @@
 function Thermostat() {
   this.DEFAULT_TEMP = 20;
-  this.temp = this.DEFAULT_TEMP;
+  this.temp = 20;
   this.MAX_TEMP_ON = 25;
   this.MAX_TEMP_OFF = 32;
   this.MIN_TEMP = 10;
