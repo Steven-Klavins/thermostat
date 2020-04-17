@@ -17,6 +17,7 @@ $( document ).ready(function() {
       thermostat.powerSavingOff();
     } else {
       thermostat.powerSavingOn();
+      updateDisplay();
     }
   });
 

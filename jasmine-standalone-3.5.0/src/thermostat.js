@@ -26,6 +26,7 @@ Thermostat.prototype.decrease = function(degrees) {
 
 Thermostat.prototype.powerSavingOn = function() {
   this.savingOn = true;
+  this.temp = this.MAX_TEMP_ON
 }
 
 Thermostat.prototype.powerSavingOff = function() {
@@ -37,10 +38,10 @@ Thermostat.prototype.reset = function() {
 }
 
 Thermostat.prototype.usage = function () {
-  if (this.temp >= 25) {
+  if (this.temp > 25) {
     return "high-usage"
   }
-  if (this.temp < 25 && this.temp>= 18){ 
+  if (this.temp <= 25 && this.temp>= 18){ 
     return "medium-usage"
   } 
   return "low-usage"

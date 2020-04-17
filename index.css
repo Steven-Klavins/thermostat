@@ -1,0 +1,19 @@
+@font-face {
+ src: url(fonts/digital-7.ttf); 
+ font-family: digital;  
+}
+
+.container {
+    position: relative;
+    text-align: left;
+    color: black;
+     position: absolute;
+      font-family: digital;
+      font-size: large;
+  }
+
+  .text-s {
+      position: absolute;
+      font-family: digital;
+      font-size: large;
+  }
