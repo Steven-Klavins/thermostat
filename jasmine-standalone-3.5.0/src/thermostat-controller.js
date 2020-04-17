@@ -5,6 +5,7 @@ $( document ).ready(function() {
   $( "#up" ).click(function( event ) {
     thermostat.increase(1);
     updateDisplay();
+   
   });
 
   $( "#down" ).click(function( event ) {
@@ -29,6 +30,15 @@ $( document ).ready(function() {
   function updateDisplay() {
     $( "#current-temp" ).text(thermostat.temp);
     $( "#usage" ).text(thermostat.usage());
+    $( "#usage" ).text(thermostat.usage());
+    increaseBar(thermostat.temp);
+
+  }
+
+  function increaseBar(temp){
+    const level = document.getElementsByClassName('bar')[0]
+    level.style.setProperty('--height', height = temp)
+    
   }
 
 
