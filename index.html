@@ -6,22 +6,29 @@
     <link rel="stylesheet" href="index.css">
   </head>
 
-  <body class="container">
-    <img src="./images/Thermostat.png" alt="Thermostat" style="width:25%;height:25%; position: relative;">
-    <h1>Current tempreture</h1>
-    <div id="weather"> Weather
+  <body>
+    
+    <div>
+    <img src="./images/Thermostat.png" alt="Thermostat" style="width:420px;height:434px;">
     </div>
-    <div id="current-temp">
-    </div>
+
+    <div class="container">
+    <h1 id="current-temp"> Current temp </h1>
+    <h1 id="weather"> Weather </h1>
+
     <form>
       <input id="up" type="button" value="+">
       <input id="down" type="button" value="-">
       <input id="power-saving" type="button" value="Power-saving">
       <input id="reset" type="button" value="Reset">
     </form>
+
     <div id="usage">
       usage
     </div>
+
+    </div>
+
     <script src="jquery-3.5.0.js"></script>
     <script src="./jasmine-standalone-3.5.0/src/thermostat.js"></script>
     <script src="./jasmine-standalone-3.5.0/src/thermostat-controller.js"></script>
