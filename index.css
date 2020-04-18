@@ -23,19 +23,18 @@
   }
 
   .bar {
-    box-sizing: border-box;
-    position: absolute;bottom: 0;
-    margin-left: 320px;
-    margin-bottom: 400px;
-    height: calc(var(--height, 0)*1%) ;
+    position: absolute;bottom:0;
+    height: calc(var(--height, 0)*2.5%);
     width: 1em;
+    margin-left: 50px;
+    margin-bottom: 40px;
     background-color: rgb(202, 199, 199);
-    z-index: +1;
     border-radius: 0.5em;
-    min-height: 10px;
-    max-height: 32;
-      
+    display: block;
+    z-index: -1;
   }
+
+ 
 
  
 
